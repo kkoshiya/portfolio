@@ -98,3 +98,17 @@ body {
     border-left: 3px solid grey;
     height: 100%;
 }
+
+.education-button {
+    width: 50%;
+}
+
+.bottom {
+    background-color: #10A7AF;
+    height: 75%;
+}
+
+.end-text {
+    color: white;
+    font-weight: 700;
+}
