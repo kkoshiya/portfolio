@@ -1,3 +1,31 @@
+
+
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+} 
+
+.title {
+    margin: 2%;
+}
+
+.title-text {
+    font-weight: 600;
+    color: #10A7AF;
+    font-size: 350%;
+}
+
+.after, .before {
+    border: 4px double #c2c2c2;
+    width: 120px;
+    display: inline-block;
+    content: "";
+    margin: 9px 10px;
+}
+
+
+
 .nav {
     background-color: #10A7AF;
     padding: 1%;
@@ -44,6 +72,29 @@ body {
     border: 3px solid #10A7AF;
 }
 
+.no-dot-3 {
+    list-style-type: none;
+    color: #10A7AF;
+    font-weight: 700;
+    font-size: 150%;
+}
 
+.year {
+    font-weight: 500;
+    font-size: 110%;
+}
 
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+    color: black;
+}
 
+.line {
+    border-left: 3px solid grey;
+    height: 100%;
+}
