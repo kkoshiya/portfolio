@@ -3,55 +3,67 @@
 
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+  <div class="nav">
+    <div class="container">
+        <div class="row">   
+            <div class="col">
+                <p>Download Resume</p>
+            </div>
+            <div class="col">
+                <p>Economic Publications</p>
+            </div>
+        </div>
     </div>
-  </nav>
+  </div>
 
+
+  <div class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img class="headshot" src="static/pic1.jpg" alt="klye">
+            </div>
+            <div class="col-5">
+                <h1 class="name">Kyle Koshiyama</h1>
+                <h5 class="tag">Full Stack Software Engineer</h2>
+            </div>
+            <div class="col-1">
+                <ul>
+                    <li class="no-dot">Email:</li>
+                    <br>
+                    <li class="no-dot">Github:</li>
+                    <br>
+                    <li class="no-dot">Status:</li>
+                    <br>
+                    <li class="no-dot">LinkedIn:</li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul>
+                    <li class="no-dot-2">kylekoshiya@gmail.com</li>
+                    <br>
+                    <li class="no-dot-2">Github</li>
+                    <br>
+                    <li class="no-dot-2">seeking</li>
+                    <br>
+                    <li class="no-dot-2">LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
       <div class="col-1"></div>
       <div class="col-8">
         <ul>
-          <li>Photon Commerce flask test </li>
+          <li>Photon Commerce - Software Devloper</li>
           <div>
             <ul>
               <li>
@@ -74,7 +86,7 @@
       <div class="col-1"></div>
       <div class="col-8">
         <ul>
-          <li>Photon Commerce flask test </li>
+          <li>Simulation Systems</li>
           <div>
             <ul>
               <li>
@@ -90,14 +102,14 @@
           </div>
         </ul>
       </div>
-      <div class="col">2021</div>
+      <div class="col">2020</div>
     </div>
 
     <div class="row">
       <div class="col-1"></div>
       <div class="col-8">
         <ul>
-          <li>Photon Commerce flask test </li>
+          <li>Principal Financial Group - Quantative Scientist Intern</li>
           <div>
             <ul>
               <li>
@@ -127,7 +139,7 @@
         <div class="text center">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
           style="background-color:black;color:white;">
-            <img class="img-fluid" id='education-pic' src="{{url_for('static', filename='images/K.png')}}" alt="">
+            <img class="img-fluid" id='education-pic' src="static/K.jpg" alt="">
           </button>    
         </div>
 
@@ -141,7 +153,7 @@
               </div>
               <div class="modal-body">
                 <a href="https://kickstart-clone.herokuapp.com/#/">
-                  <img class="img-fluid" src="{{ url_for('static', filename='images/K.png') }}" alt="HTML tutorial"></a>
+                  <img class="img-fluid" src="static/K.jpg" alt="HTML tutorial"></a>
                 <p>Kickstarter full stack clone. Ruby and Rails backend with SQL database. React and Redux front end. Feel free to sign up for a new account or 
                   play around with the demo user account.
                 </p>
@@ -157,14 +169,14 @@
       <div class="col">
         <!-- Button trigger modal -->
         <div class="text center">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img class="img-fluid" id='education-pic' src="{{url_for('static', filename='images/lsa.png')}}" alt="">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-2">
+            <img class="img-fluid" src="static/ball.jpg"  alt="">
           </button>    
         </div>
         
         
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="Modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -172,8 +184,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <a href="https://kickstart-clone.herokuapp.com/#/"><img
-                  src="{{ url_for('static', filename='images/K.png') }}" alt="HTML tutorial"></a>
+                <a href="https://kickstart-clone.herokuapp.com/#/" target="_blank"><img class="img-fluid"
+                  src="static/ball.jpg" alt="HTML tutorial"></a>
                 <p>Pick Up Basketball Express App</p>
               </div>
               <div class="modal-footer">
